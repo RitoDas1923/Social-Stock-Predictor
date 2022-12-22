@@ -7,3 +7,5 @@ Then a model is selected and a graph is plotted to find out how much public sent
 
 
 A demo of the Apple stock is given using a simple Web Page hosted using Flask API
+
+![alt text](https://github.com/RitoDas1923/Social-Stock-Predictor/blob/master/plot.jpg)
