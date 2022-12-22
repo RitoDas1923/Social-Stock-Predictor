@@ -1,0 +1,39 @@
+<!-- HTML file to display the image received from Flask -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>STOCK PREDICTOR</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        .plot-img {
+            display: box;
+            height: 60vh;
+            width: 50vw;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Apple Stock Predictor </h1>
+    <!-- Display plot.png from static -->
+    <img class="plot-img" src="{{ url_for('static', filename='plot.jpg') }}" alt="plot.png">
+
+</body>
+
+</html>
