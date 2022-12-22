@@ -1,0 +1,81 @@
+<!-- HTML form in a centred div to accept start and end dates -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>STOCK PREDICTOR</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .container {
+            height: 100%
+        }
+
+        body {
+            height: 100vh;
+        }
+
+        .row {
+            height: 100%;
+
+            display: flex;
+            /* align-items:center; */
+            justify-content: center;
+            /* background-color: rgb(239, 239, 239); */
+            background: url("../static/stock-img.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .new-table {
+            width: 40%;
+            margin-top: 10em;
+            background-color: white;
+            height: 50%;
+            padding: 2em;
+            border-radius: 20px;
+            border: 1px solid black;
+        }
+
+        h1 {
+            margin-bottom: 1em;
+        }
+
+        .form-group {
+            margin-bottom: 1em;
+        }
+
+        .btn {
+            margin-top: 1em;
+            align-items: right;
+        }
+
+        /* center container */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="new-table">
+                <h1>Apple Stock Predictor </h1>
+                <form action="/plot" method="post">
+                    <div class="form-group">
+                        <label for="start">Start Date</label>
+                        <input type="date" class="form-control" id="start" name="start">
+                    </div>
+                    <div class="form-group">
+                        <label for="end">End Date</label>
+                        <input type="date" class="form-control" id="end" name="end">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</html>
